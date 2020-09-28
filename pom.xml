@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>study.qi</groupId>
+    <artifactId>JavaStudy</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Basic-01-CommonClass</module>
+        <module>Basic-02-Exception</module>
+        <module>Basic-03-Thread</module>
+        <module>Basic-04-SetFrameWork</module>
+        <module>Basic-05-Generic</module>
+        <module>Basic-06-IO</module>
+        <module>Basic-07-NetWork</module>
+        <module>Basic-08-Reflect</module>
+        <module>Basic-09-Proxy</module>
+        <module>Advanced-01-JUC</module>
+        <module>Advanced-00-TheNew</module>
+        <module>Advanced-02-HashMap</module>
+        <module>Others-rabbitmq</module>
+        <module>Others-shiro</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
