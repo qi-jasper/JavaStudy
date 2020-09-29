@@ -21,12 +21,18 @@ public class Man extends People<String> implements MyInterface, Comparable<Strin
         this.name = name;
     }
 
+    @Override
     @MyAnnotation
     public void info() {
         System.out.println("This is a man...");
     }
 
+    @Override
     public int compareTo(String o) {
         return 0;
+    }
+
+    public static void staticMethod() {
+        System.out.println("this is static method");;
     }
 }
