@@ -1,4 +1,4 @@
-package method;
+package jdk8.method;
 
 /**
  * @Description 方法引用

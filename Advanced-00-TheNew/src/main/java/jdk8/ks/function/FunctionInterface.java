@@ -1,4 +1,4 @@
-package ks.function;
+package jdk8.ks.function;
 
 /**
  * @Description Java内置的四大核心函数式接口
