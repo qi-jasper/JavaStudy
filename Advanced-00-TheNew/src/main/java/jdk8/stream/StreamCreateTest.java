@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
- * @Description
+ * @Description Stream 的创建方式
  * @Author qi
  *
  * @Date 2020/10/20 11:36
