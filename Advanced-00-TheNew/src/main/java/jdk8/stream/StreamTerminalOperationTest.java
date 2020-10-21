@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @Description Stream 终止操作
@@ -29,5 +30,31 @@ public class StreamTerminalOperationTest {
         System.out.println(list.stream().findAny());
         System.out.println("********遍历********");
         list.stream().forEach(System.out :: println);
+    }
+
+    /**
+     * 规约
+     */
+    @Test
+    public void conventionTest() {
+
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        /**
+         * reduce(T iden, BinaryOperator b)
+         * 求 1~10 的和
+         */
+        Integer sum = list.stream().reduce(0, Integer::sum);
+        System.out.println(sum);
+    }
+
+    /**
+     * 收集
+     */
+    @Test
+    public void collectTest() {
+        List<String> list = Arrays.asList("liu", "qi", "jasper", "ritchie");
+        List<String> getList = list.stream().filter(e -> e.contains("i")).collect(Collectors.toList());
+        getList.forEach(System.out :: println);
     }
 }
