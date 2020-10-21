@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  * @ClassName StreamOperation
  **/
 
-public class StreamOperationTest {
+public class StreamMidOperationTest {
 
     /**
      * 筛选与切片
@@ -115,14 +115,14 @@ public class StreamOperationTest {
          * 类似 list.add() 中 list 里有一个 list
          * 相当于 stream 里有一个 stream
          */
-        Stream<Stream<Character>> streamStream = list.stream().map(StreamOperationTest :: fromStringToStream);
+        Stream<Stream<Character>> streamStream = list.stream().map(StreamMidOperationTest:: fromStringToStream);
         streamStream.forEach(s -> {
             s.forEach(System.out :: println);
         });
 
         System.out.println("*****使用flatMap()******");
         // 使用 flatMap()
-        Stream<Character> characterStream = list.stream().flatMap(StreamOperationTest::fromStringToStream);
+        Stream<Character> characterStream = list.stream().flatMap(StreamMidOperationTest::fromStringToStream);
         characterStream.forEach(System.out :: println);
     }
 
