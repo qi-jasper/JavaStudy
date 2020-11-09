@@ -42,7 +42,7 @@ public class LoadPropertiesTest {
         ClassLoader classLoader = LoadPropertiesTest.class.getClassLoader();
 
         // 路径不对会报错，这条语句会报错
-        InputStream resourceAsStream1 = classLoader.getResourceAsStream("src\\\\main\\\\resources\\test.properties");
+        InputStream resourceAsStream1 = classLoader.getResourceAsStream("src\\main\\resources\\test.properties");
         // 这条正确
         InputStream resourceAsStream = classLoader.getResourceAsStream("test.properties");
 
