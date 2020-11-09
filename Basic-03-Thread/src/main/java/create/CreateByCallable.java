@@ -6,6 +6,8 @@ import java.util.concurrent.FutureTask;
 
 import org.junit.Test;
 
+import javax.xml.namespace.QName;
+
 /**
  * @Description
  * @Author qi
@@ -28,7 +30,7 @@ class NumThread implements Callable {
         for(int i=1; i<=100; i++) {
             if(i%2 == 0) {
                 System.out.println(i);
-                sum = sum + i;
+                sum += i;
             }
         }
 
