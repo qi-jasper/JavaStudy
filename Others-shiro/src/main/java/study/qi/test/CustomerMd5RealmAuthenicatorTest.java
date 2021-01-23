@@ -17,7 +17,6 @@ import java.util.Arrays;
  * @Date 2020/8/20 23:07
  * @ClassName CustomerMd5RealmAuthenicatorTest
  **/
-
 public class CustomerMd5RealmAuthenicatorTest {
 
     public static void main(String[] args) {

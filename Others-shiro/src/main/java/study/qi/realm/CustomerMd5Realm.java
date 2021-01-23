@@ -16,7 +16,6 @@ import org.apache.shiro.util.ByteSource;
  * @Date 2020/8/20 23:03
  * @ClassName CustomerMd5Realm
  **/
-
 public class CustomerMd5Realm extends AuthorizingRealm {
 
     // 授权

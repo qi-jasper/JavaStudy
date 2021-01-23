@@ -14,7 +14,6 @@ import org.apache.shiro.subject.PrincipalCollection;
  * @Date 2020/8/18 17:17
  * @ClassName CustomerRealm
  **/
-
 public class CustomerRealm extends AuthorizingRealm {
 
     // 授权

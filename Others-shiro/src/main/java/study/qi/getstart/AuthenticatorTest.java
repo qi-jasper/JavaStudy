@@ -14,7 +14,6 @@ import org.apache.shiro.subject.Subject;
  * @Date 2020/8/17 10:14
  * @ClassName AuthenticatorTest
  **/
-
 public class AuthenticatorTest {
 
     public static void main(String[] args) {

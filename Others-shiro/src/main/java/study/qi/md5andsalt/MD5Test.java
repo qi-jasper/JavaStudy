@@ -8,7 +8,6 @@ import org.apache.shiro.crypto.hash.Md5Hash;
  * @Date 2020/8/20 19:29
  * @ClassName MD5Test
  **/
-
 public class MD5Test {
 
     public static void main(String[] args) {
@@ -37,5 +36,4 @@ public class MD5Test {
         System.out.println("使用 md5 + salt + hash 散列对密码'123'加密后的16进制：" + md5Hash2.toHex());
 
     }
-
 }

@@ -15,7 +15,6 @@ import study.qi.realm.CustomerRealm;
  * @Date 2020/8/18 17:22
  * @ClassName DefinedRealmTest
  **/
-
 public class DefinedRealmTest {
 
     public static void main(String[] args) {
