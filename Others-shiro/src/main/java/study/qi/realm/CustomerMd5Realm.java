@@ -11,7 +11,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
 
 /**
- * @Description
+ * @Description 自定义的 MD5 Realm
  * @Author qi
  * @Date 2020/8/20 23:03
  * @ClassName CustomerMd5Realm

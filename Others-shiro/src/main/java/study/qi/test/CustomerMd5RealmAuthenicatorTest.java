@@ -12,7 +12,7 @@ import study.qi.realm.CustomerMd5Realm;
 import java.util.Arrays;
 
 /**
- * @Description
+ * @Description 使用 MD5 + Salt + Hash 散列加密认证
  * @Author qi
  * @Date 2020/8/20 23:07
  * @ClassName CustomerMd5RealmAuthenicatorTest
@@ -23,6 +23,7 @@ public class CustomerMd5RealmAuthenicatorTest {
         // 创建安全管理器
         DefaultSecurityManager defaultSecurityManager = new DefaultSecurityManager();
 
+        // 实例化自定义 realm 对象
         CustomerMd5Realm realm = new CustomerMd5Realm();
 
         // 使用凭证匹配器中的 hash 匹配器，并指定算法为 md5
@@ -59,7 +60,7 @@ public class CustomerMd5RealmAuthenicatorTest {
         }
 
 
-        // 认证了的用户进行授权
+        // 对认证了的用户进行授权
         if (subject.isAuthenticated()) {
             // 1. 基于角色的权限控制
             System.out.println("是否含有 admin 权限：" + subject.hasRole("admin"));
@@ -67,14 +68,24 @@ public class CustomerMd5RealmAuthenicatorTest {
             // 2. 基于多角色权限控制
             System.out.println("是否含有 admin 和 user 权限：" + subject.hasAllRoles(Arrays.asList("admin, user")));
 
-            // 是否具有其中一个角色
+            // 3. 是否具有其中一个角色
             boolean[] booleans = subject.hasRoles(Arrays.asList("admin", "user", "super"));
             for (Boolean aboolean : booleans) {
-                System.out.println(aboolean);
+                System.out.println("是否有 admin，user，super 中的某一个权限：" + aboolean);
             }
 
-            // 基于权限字符串的访问控制，资源标识符:操作:资源类型
-            System.out.println(subject.isPermitted("user:*:01"));
+            // 4. 基于权限字符串的访问控制，资源标识符:操作:资源类型
+            System.out.println("是否有自定义的 Realm 中的通过权限字符串设置的权限：" + subject.isPermitted("user:*:01"));
+
+            // 5. 分别具有哪些权限
+            boolean[] permitted = subject.isPermitted("user:*:01", "order:*:02");
+            for (boolean b : permitted) {
+                System.out.println(b);
+            }
+
+            // 6. 同时具有哪些权限
+            boolean permittedAll = subject.isPermittedAll("user:*:01", "order:*:02");
+            System.out.println("同时具有哪些权限：" + permittedAll);
         }
     }
 }
