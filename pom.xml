@@ -22,7 +22,6 @@
         <module>Advanced-00-TheNew</module>
         <module>Advanced-02-HashMap</module>
         <module>Others-rabbitmq</module>
-        <module>Others-shiro</module>
         <module>Advanced-00-JVMStudy</module>
     </modules>
 
