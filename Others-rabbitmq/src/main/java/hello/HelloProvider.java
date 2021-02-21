@@ -2,17 +2,16 @@ package hello;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
-import utils.RabbitMQUtils;
+import utils.RabbitUtils;
 
 import java.io.IOException;
 
 /**
- * @Description
+ * @Description Hello World 模型生产者
  * @Author qi
  * @Date 2020/8/16 17:03
  * @ClassName HelloProvider
  **/
-
 public class HelloProvider {
 
     public static void main(String[] args) throws IOException {
@@ -20,15 +19,24 @@ public class HelloProvider {
         helloProvider.sendMessage();
     }
 
+    /**
+     * 发送消息
+     * @throws IOException IO 异常
+     */
     public void sendMessage() throws IOException {
 
-        // 获取连接对象
-        Connection connection = RabbitMQUtils.getConnection();
+        // 定义要发送的消息
+        final String message ="Hello! RabbitMQ!";
 
-        // 获取连接中通道
+        // 获取连接对象
+        Connection connection = RabbitUtils.getConnection();
+
+        // assert connection != null;
+
+        // 获取连接中通道，连接通过通道去发送消息，通道要与消息队列绑定
         Channel channel = connection.createChannel();
 
-        /**
+        /*
          * 绑定对应队列
          * 参数1: 队列名称，如果不存在则自动创建
          * 参数2: 用来定义队列特性，是否要持久化, true: 持久化队列， false: 不持久化队列
@@ -38,18 +46,16 @@ public class HelloProvider {
          */
         channel.queueDeclare("hello", false, false, false, null);
 
-        /**
-         * 参数1: 交换机名称
-         * 参数2: 队列名称
+        /*
+         * 发送消息到队列中
+         * 参数1: 交换机名称（因为这种模式不需要用到交换机，所以空着就行）
+         * 参数2: 要把消息发送到的队列的名称
          * 参数3: 传递消息额外设置
          * 参数4: 消息的具体内容
          */
-
-        final String MESSAGE ="Hello! RabbitMQ!";
-
-        channel.basicPublish("", "hello", null, MESSAGE.getBytes());
+        channel.basicPublish("", "hello", null, message.getBytes());
 
         // 关闭连接
-        RabbitMQUtils.closeConnectionAndChannel(channel, connection);
+        RabbitUtils.closeConnectionAndChannel(channel, connection);
     }
 }
