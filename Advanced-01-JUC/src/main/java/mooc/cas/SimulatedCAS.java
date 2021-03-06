@@ -6,7 +6,6 @@ package mooc.cas;
  * @Date 2020/8/5 10:10
  * @ClassName SimulatedCAS
  **/
-
 public class SimulatedCAS {
     private volatile int value;
 

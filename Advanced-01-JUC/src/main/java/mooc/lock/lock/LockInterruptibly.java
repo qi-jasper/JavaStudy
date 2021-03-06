@@ -9,7 +9,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2020/7/5 21:16
  * @ClassName LockInterruptibly
  **/
-
 public class LockInterruptibly implements Runnable {
 
     public static void main(String[] args) {

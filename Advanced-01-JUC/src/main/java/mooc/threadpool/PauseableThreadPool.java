@@ -15,7 +15,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2020/6/16 15:24
  * @ClassName PauseableThreadPool
  **/
-
 public class PauseableThreadPool extends ThreadPoolExecutor {
 
     private final ReentrantLock lock = new ReentrantLock();

@@ -6,7 +6,6 @@ package mooc.threadpool;
  * @Date 2020/6/15 15:30
  * @ClassName EveryTaskOneThread
  **/
-
 public class EveryTaskOneThread {
     public static void main(String[] args) {
         Thread thread = new Thread(new Task());

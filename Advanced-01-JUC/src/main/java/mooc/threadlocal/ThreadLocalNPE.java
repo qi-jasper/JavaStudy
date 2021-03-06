@@ -6,7 +6,6 @@ package mooc.threadlocal;
  * @Date 2020/6/23 13:55
  * @ClassName ThreadLocalNPE
  **/
-
 public class ThreadLocalNPE {
 
     ThreadLocal<Long> longThreadLocal = new ThreadLocal<Long>();

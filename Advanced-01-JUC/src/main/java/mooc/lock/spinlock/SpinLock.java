@@ -8,7 +8,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Date 2020/7/6 22:21
  * @ClassName SpinLock
  **/
-
 public class SpinLock {
 
     private AtomicReference<Thread> sign = new AtomicReference<>();

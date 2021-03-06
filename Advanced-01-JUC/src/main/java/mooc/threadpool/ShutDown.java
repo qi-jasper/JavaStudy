@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
  * @Date 2020/6/16 12:50
  * @ClassName ShutDown
  **/
-
 public class ShutDown {
 
     public static void main(String[] args) throws InterruptedException {

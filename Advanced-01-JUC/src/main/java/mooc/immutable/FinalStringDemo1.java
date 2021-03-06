@@ -6,7 +6,6 @@ package mooc.immutable;
  * @Date 2020/8/6 09:17
  * @ClassName FinalStringDemo1
  **/
-
 public class FinalStringDemo1 {
     public static void main(String[] args) {
         String a = "wukong2";

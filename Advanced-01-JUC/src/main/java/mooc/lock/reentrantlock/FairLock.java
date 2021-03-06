@@ -10,7 +10,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2020/7/6 11:52
  * @ClassName FairLock
  **/
-
 public class FairLock {
 
     public static void main(String[] args) {

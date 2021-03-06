@@ -11,7 +11,6 @@ import java.util.concurrent.Executors;
  * @Date 2020/6/18 19:04
  * @ClassName ThreadLocalNormalUsage03
  **/
-
 public class ThreadLocalNormalUsage03 {
 
     public static ExecutorService threadPool = Executors.newFixedThreadPool(10);

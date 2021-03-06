@@ -8,7 +8,6 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @Date 2020/7/6 14:57
  * @ClassName NonefairBargeDemo
  **/
-
 public class NonefairBargeDemo {
     // 设置为非公平的
     private static ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock(false);

@@ -9,7 +9,6 @@ import java.util.Date;
  * @Date 2020/6/18 18:41
  * @ClassName ThreadLocalNormalUsage00
  **/
-
 public class ThreadLocalNormalUsage00 {
 
     public String date(int seconds) {

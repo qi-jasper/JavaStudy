@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
  * @Date 2020/6/15 15:16
  * @ClassName FixedThreadPool
  **/
-
 public class FixedThreadPool {
 
     public static void main(String[] args) {

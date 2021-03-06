@@ -6,7 +6,6 @@ package mooc.threadpool;
  * @Date 2020/6/15 15:18
  * @ClassName Task
  **/
-
 public class Task implements Runnable {
 
     @Override

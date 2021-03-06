@@ -6,7 +6,6 @@ package mooc.threadpool;
  * @Date 2020/6/15 15:19
  * @ClassName ForLoop
  **/
-
 public class ForLoop {
 
     public static void main(String[] args) {

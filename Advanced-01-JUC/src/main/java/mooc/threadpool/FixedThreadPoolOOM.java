@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
  * @Date 2020/6/15 15:21
  * @ClassName FixedThreadPoolOOM
  **/
-
 public class FixedThreadPoolOOM {
 
     private static ExecutorService executorService = Executors.newFixedThreadPool(1);

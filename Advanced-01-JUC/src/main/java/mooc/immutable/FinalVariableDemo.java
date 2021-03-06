@@ -6,7 +6,6 @@ package mooc.immutable;
  * @Date 2020/8/5 10:36
  * @ClassName FinalVariableDemo
  **/
-
 public class FinalVariableDemo {
 
     /**

@@ -6,7 +6,6 @@ package mooc.cas;
  * @Date 2020/8/5 10:11
  * @ClassName TwoThreadsCompetition
  **/
-
 public class TwoThreadsCompetition implements Runnable {
 
     private volatile int value;

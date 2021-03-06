@@ -6,7 +6,6 @@ package mooc.threadlocal.set;
  * @Date 2020/6/23 11:39
  * @ClassName ThreadLocalNormalUsage06
  **/
-
 public class ThreadLocalNormalUsage06 {
     public static void main(String[] args) {
         // 期望：Service1设置对象后，Service2和Service3能够直接拿到

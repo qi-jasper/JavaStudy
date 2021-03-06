@@ -8,7 +8,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2020/7/6 09:59
  * @ClassName CinemaBookSeat
  **/
-
 public class CinemaBookSeat {
     private static ReentrantLock lock = new ReentrantLock();
     private static void bookSeat() {

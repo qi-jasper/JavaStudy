@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
  * @Date 2020/6/15 15:17
  * @ClassName SingleThreadExecutor
  **/
-
 public class SingleThreadExecutor {
 
     public static void main(String[] args) {

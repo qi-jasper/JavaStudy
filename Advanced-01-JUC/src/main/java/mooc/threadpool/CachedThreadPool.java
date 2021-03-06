@@ -9,7 +9,6 @@ import java.util.concurrent.Executors;
  * @Date 2020/6/15 15:14
  * @ClassName CachedThreadPool
  **/
-
 public class CachedThreadPool {
 
     public static void main(String[] args) {
