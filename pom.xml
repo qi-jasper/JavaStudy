@@ -23,6 +23,7 @@
         <module>Advanced-02-HashMap</module>
         <module>Others-rabbitmq</module>
         <module>Advanced-00-JVMStudy</module>
+        <module>Others-Log</module>
     </modules>
 
     <properties>
@@ -37,11 +38,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.2</version>
             <scope>test</scope>
         </dependency>
 
