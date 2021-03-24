@@ -7,7 +7,7 @@ import java.util.concurrent.*;
  * @Description 演示一个 Future 的使用方法，Lambda 方式
  * @Author qi
  * @Date 2021/3/24 10:56
- * @ClassName OneFuture
+ * @ClassName OneFutureLambda
  **/
 public class OneFutureLambda {
     public static void main(String[] args) {
