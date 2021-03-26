@@ -1,7 +1,7 @@
 package study.log4j;
 
 import org.apache.log4j.Logger;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 
 /**
